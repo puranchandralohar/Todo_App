@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Wrapper{
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.todoApp{
+    display: flex;
+    gap:0.25rem;
+}
+
+.todoApp input, button{
+    padding: 8px 12px;
+}
+
+.todoApp button{
+    background-color: #5555dd;
+    color:#eee;
+    border:none;
+    cursor: pointer;
+}

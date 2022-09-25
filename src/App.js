@@ -1,11 +1,9 @@
-import './App.css';
 import { Todoapp } from './Components/Todoapp';
 
 function App() {
   return (
     <div>
-      <Todoapp />
-     
+      <Todoapp />    
     </div>
   );
 }
