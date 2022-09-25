@@ -4,11 +4,18 @@
     box-sizing: border-box;
 }
 
+.heading{
+    position: fixed;
+    top:10%;
+    left:5%;
+}
+
 .Wrapper{
     max-width: 800px;
     margin: 20px auto;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .todoApp{
@@ -25,4 +32,40 @@
     color:#eee;
     border:none;
     cursor: pointer;
+}
+
+.todo_lists{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.todo_lists div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50vw;
+    padding: 5px 10px;
+    border:1px solid #504d4d;
+}
+
+.todo_lists span{
+    width: 50%;
+}
+
+.btn{
+    border:none;
+    cursor: pointer;
+}
+
+.edit{
+    background-color: green;
+    color:#eee;
+}
+
+.del{
+    background-color: darkred;
+    color: #eee;
 }
