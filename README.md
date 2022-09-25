@@ -1,1 +1,1 @@
-<img src="output.png">
+<img src="/public/output.png">
