@@ -32,9 +32,6 @@ export function Todoapp() {
             {todos.map((todo) => (
                 <div>
                     <span>{todo}</span>
-                    <button className='btn edit' onClick={()=>{
-                        
-                    }}>Edit</button>
                     <button className='btn del'
                         onClick={() => {
                             let filteredItems = todos.filter((value) => value !== todo);
