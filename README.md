@@ -1,1 +1,1 @@
-<img src="/public/output.png">
+A simple todo app created on ReactJs.

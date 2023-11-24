@@ -4,68 +4,100 @@
     box-sizing: border-box;
 }
 
-.heading{
-    position: fixed;
-    top:10%;
-    left:5%;
+.Wrapper{
+    position: relative;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.Wrapper{
-    max-width: 800px;
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.heading{
+    padding: 20px;
+    position: absolute;
+    top:10%;
+    right: 10%;
+    font-family:sans-serif;
+    color:rgb(181, 177, 172);
 }
 
 .todoApp{
     display: flex;
-    gap:0.25rem;
-}
-
-.todoApp input, button{
-    padding: 8px 12px;
-}
-
-.todoApp button{
-    background-color: #5555dd;
-    color:#eee;
-    border:none;
-    cursor: pointer;
-}
-
-.todo_lists{
-    margin-top: 20px;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
+    gap:0.25rem;
+    padding: 20px;
 }
 
-.todo_lists div{
+.input-group{
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    width: 50vw;
-    padding: 5px 10px;
-    border:1px solid #504d4d;
+    gap:10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
 }
 
-.todo_lists span{
-    width: 50%;
+.input{
+    font-size: 15px;
+    width: 100%;
+    padding: 20px 25px;
+    outline: none;
+    border: none;
+    background: transparent;
+    border: 2px solid gray;
 }
 
 .btn{
-    border:none;
-    cursor: pointer;
+    color:gray;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #a5a5a5;
+    border: 2px solid gray;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor:pointer
 }
 
-.edit{
-    background-color: green;
-    color:#eee;
+
+.todo_lists{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+    gap: 0.5rem;
+}
+
+.para{
+    color: #a5a5a5;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.list{
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
 }
 
 .del{
-    background-color: darkred;
-    color: #eee;
+    color: red;
+    border: 1px solid gray;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    font-size: 15px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor:pointer
 }
